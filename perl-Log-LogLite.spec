@@ -7,7 +7,7 @@
 %define	pdir	Log
 %define	pnam	LogLite
 Summary:	Log::LogLite - class to help us create simple logs for our application
-Summary(pl):	Log::LogLite - klasa pomagaj±ca tworzyæ proste logi z aplikacji
+Summary(pl.UTF-8):   Log::LogLite - klasa pomagajÄ…ca tworzyÄ‡ proste logi z aplikacji
 Name:		perl-Log-LogLite
 Version:	0.82
 Release:	0.1
@@ -34,15 +34,15 @@ message will be written to the log file. The format of the logging
 messages can be controled by changing the template, and by defining a
 default message. The class uses the IO::LockedFile class.
 
-%description -l pl
-W celu stworzenia logu trzeba najpierw utworzyæ obiekt Log::LogLite.
-Obiekt Log::LogLite tworzy siê z poziomem logowania. Domy¶lny poziom
-logowania to 5. Po utworzeniu obiektu Log::LogLite ka¿de wywo³anie
-metody write mo¿e zapisaæ now± liniê w pliku logu. Je¶li poziom
-komunikatu jest mniejszy lub równy poziomowi logowania, komunikat jest
-zapisywany do pliku. Format komunikatów loguj±cych mo¿e byæ sterowany
-poprzez zmianê szablonu i definiowanie domy¶lnego komunikatu. Ta klasa
-u¿ywa klasy IO::LockedFile.
+%description -l pl.UTF-8
+W celu stworzenia logu trzeba najpierw utworzyÄ‡ obiekt Log::LogLite.
+Obiekt Log::LogLite tworzy siÄ™ z poziomem logowania. DomyÅ›lny poziom
+logowania to 5. Po utworzeniu obiektu Log::LogLite kaÅ¼de wywoÅ‚anie
+metody write moÅ¼e zapisaÄ‡ nowÄ… liniÄ™ w pliku logu. JeÅ›li poziom
+komunikatu jest mniejszy lub rÃ³wny poziomowi logowania, komunikat jest
+zapisywany do pliku. Format komunikatÃ³w logujÄ…cych moÅ¼e byÄ‡ sterowany
+poprzez zmianÄ™ szablonu i definiowanie domyÅ›lnego komunikatu. Ta klasa
+uÅ¼ywa klasy IO::LockedFile.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
