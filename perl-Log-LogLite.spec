@@ -10,7 +10,7 @@ Summary:	Log::LogLite - class to help us create simple logs for our application
 Summary(pl.UTF-8):	Log::LogLite - klasa pomagająca tworzyć proste logi z aplikacji
 Name:		perl-Log-LogLite
 Version:	0.82
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
