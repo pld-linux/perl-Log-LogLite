@@ -2,10 +2,10 @@
 # Conditional build:
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	Log
 %define	pnam	LogLite
+%include	/usr/lib/rpm/macros.perl
 Summary:	Log::LogLite - class to help us create simple logs for our application
 Summary(pl.UTF-8):	Log::LogLite - klasa pomagająca tworzyć proste logi z aplikacji
 Name:		perl-Log-LogLite
@@ -16,6 +16,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	67e72da51df7423c028b4dc0186f5f52
+URL:		http://search.cpan.org/dist/Log-LogLite/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
@@ -26,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 In order to have a log we have first to create a Log::LogLite object.
-The Log::LogLite object is created with a logging level. The default 
+The Log::LogLite object is created with a logging level. The default
 logging level is 5. After the Log::LogLite object is created, each
 call to the write method may write a new line in the log file. If the
 level of the message is lower or equal to the logging level, the
