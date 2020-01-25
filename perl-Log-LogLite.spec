@@ -5,7 +5,6 @@
 
 %define	pdir	Log
 %define	pnam	LogLite
-%include	/usr/lib/rpm/macros.perl
 Summary:	Log::LogLite - class to help us create simple logs for our application
 Summary(pl.UTF-8):	Log::LogLite - klasa pomagająca tworzyć proste logi z aplikacji
 Name:		perl-Log-LogLite
